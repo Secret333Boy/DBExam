@@ -5,6 +5,7 @@ CREATE TABLE Document (
     content text NOT NULL,
     entry_date date NOT NULL
 );
+--- using of function in constraint
 CREATE OR REPLACE FUNCTION validateRate (rate smallint) RETURNS bool
 AS
 $$
